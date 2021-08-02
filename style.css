@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+
+body {
+    background-color: black;
+}
+
+
+h1 {
+    color: white;
+   
+   
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    height: 100vh;
+    
+}
+
+button {
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    /* letter-spacing: 2px; */
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    transition: ease-out 0.3s;
+    outline: none;
+    border: 3px solid white;
+    position: relative;
+    z-index: 1;
+
+}
+
+button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+button:before {
+    transition: 0.5 all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: white;
+
+}
+
+button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+   
+
+}
+
+#isIt {
+    color: white;
+    font-size: large;
+}
